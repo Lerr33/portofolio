@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Fahrel Hafiz</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-white: #ffffff;
+            --text-gray: #b3b3b3;
+            --accent-pink: #ff00ff;
+            --accent-blue: #00ffff;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: var(--font-main);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: var(--text-gray);
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+
+        .menu-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .menu-card {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            padding: 40px;
+            border-radius: 20px;
+            width: 300px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .menu-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .menu-card p {
+            color: var(--text-gray);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Gaya Spesifik Kartu Etika */
+        .card-etika:hover {
+            border-color: var(--accent-pink);
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+        }
+
+        /* Gaya Spesifik Kartu KWN */
+        .card-kwn:hover {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .profile-thumb {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid var(--text-white);
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="profile.png" alt="Fahrel" class="profile-thumb">
+
+    <h1>Portofolio Akademik</h1>
+    <p class="subtitle">Fahrel Hafiz Amaral Haq - Informatika Pradita</p>
+
+    <div class="menu-container">
+        <a href="etika.html" class="menu-card card-etika">
+            <h2>🧠 Etika & Budaya</h2>
+            <p>Refleksi kritis, analisis kasus moral, dan pengembangan karakter.</p>
+        </a>
+
+        <a href="kewarganegaraan.html" class="menu-card card-kwn">
+            <h2>🇮🇩 Kewarganegaraan</h2>
+            <p>Wawasan kebangsaan, pancasila, dan kontribusi sosial.</p>
+        </a>
+    </div>
+
+</body>
+
+</html>
